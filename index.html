@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Ark's Weather App</title>
+</head>
+
+<body>
+  <div class="card">
+    <div class="welcome">
+      <h2>Welcome to the Weather App!</h2>
+      <h3>Enter a city to continue...</h3>
+    </div>
+    <div class="search">
+      <input type="text" class="search-box-input" spellcheck="false" placeholder="Enter City">
+      <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="error">
+      Blud doesn't know the spelling of a city <i class="fa-regular fa-face-grin-squint-tears"></i>
+    </div>
+    <div class="weather">
+      <img class="icon" src="images/clear.png" alt="">
+      <h2 class="temp">7&deg;C</h2>
+      <h3 class="city">New York</h3>
+      <div class="other-info">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="info">
+            <div class="value">48%</div>
+            <div class="name">Humidity</div>
+          </div>
+        </div>
+        <div class="windspeed">
+          <i class="fa-solid fa-wind"></i>
+          <div class="info">
+            <div class="value">10.29km/h</div>
+            <div class="name">Wind Speed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

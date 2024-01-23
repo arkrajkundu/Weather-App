@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #7d8597, #979dac);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus,
+a:visited,
+a:active {
+  outline: none;
+}
+
+.card,
+.welcome,
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 50vw;
+  background-image: linear-gradient(to top right, #80ffdb, #72efdd);
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px 12px;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 32vw;
+  outline: none;
+}
+
+.search-btn {
+  padding: 10px 12px;
+  margin-left: -6px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.error {
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+  display: none;
+  margin-bottom: 20px;
+}
+
+.weather h2 {
+  font-size: 70px;
+}
+
+.weather h3 {
+  font-size: 40px;
+}
+
+.other-info,
+.humidity,
+.windspeed {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+.other-info {
+  font-size: 25px;
+}
+
+.humidity {
+  margin-right: 50px;
+}
+
+.other-info i {
+  transform: scale(1.75);
+}
+
+.weather {
+  display: none;
+}
+
+.welcome {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  * {
+    cursor: default;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .card {
+    width: 80vw;
+  }
+}
