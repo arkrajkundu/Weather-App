@@ -140,4 +140,8 @@ a:active {
   .humidity {
     margin-right: 30px;
   }
+
+  .search input {
+    width: 60vw;
+  }
 }
